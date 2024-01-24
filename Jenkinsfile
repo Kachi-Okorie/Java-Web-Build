@@ -14,7 +14,7 @@ pipeline {
         //checkout the code
         stage('checkout from scm') {
             steps {
-                git branch: 'main', url: 'https://github.com/Kachi-Okorie/Java-Web-Build.git'
+                git branch: 'main', url: 'https://github.com/Kachi-Okorie/Gradle-Project.git'
             }
         }
         //compile every code in our project

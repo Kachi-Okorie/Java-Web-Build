@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <title>Kachis Bootstrap demo</title>
+</head>
+
+<body>
+  <!--Beginning of nav section-->
+  <ul class="nav nav-fill bg-dark p-2">
+    <li class="nav-item">
+      <a class="nav-link active" href="#intro">Introduction</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#top">Tree Pictures (Thumbnails)</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#middle">Tree Pictures and Text</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bottom">Tall Tree Table</a>
+    </li>
+
+  </ul>
+  <!--End of nav section-->
+
+  <!--Beginning of header section-->
+  <header class="bg-info p-2">
+    <div class="container">
+      <h1> Trees of the World</h1>
+      <p>Some beautiful pictures of scenes with lovely trees</p>
+    </div>
+  </header>
+  <!--End of header section-->
+
+  <!--Beginning of carousel section-->
+
+  <div id="newCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#newCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="../static/images/trees1.png" alt="Trees" height="500" class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>Green Trees</h3>
+          <p>This can easily be the best wallpaper.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../static/images/trees2.png" alt="Trees" height="500" class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>Colorful Trees</h3>
+          <p>Who says trees have to be only green and yellow.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="../static/images/trees3.png" alt="Trees" height="500" class="d-block w-100">
+        <div class="carousel-caption">
+          <h3>Yellow Trees</h3>
+          <p>This can easily be rumoured as sunshine.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#newCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visible ">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#newCarousel" data-bs-slide="next">
+      <span class="visible">Next</span>
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  </div>
+  </div>
+  <!--End of carousel section-->
+
+  <!--Beginning of Welcome/Introduction section-->
+  <br>
+  <div class="container">
+    <h2 id="intro">Introduction</h2>
+    <p>
+      These are some of the biggest shopping centers in Melbourne, they are homes to hundreds of designer stores.
+      They have everything you can possible want; banks, restaurant, shoe stores, grocery shopping, book store, pharmacy
+      etc.
+    </p>
+    <p class="text-end"><a href="#intro">Top</a></p>
+    <!--End of Introduction section-->
+
+    <!--Beginning of section with Thumbnail images-->
+    <h2 id="top">Tree Pictures (Thumbnails)</h2>
+    <p>
+      Below are beautiful pictures of trees as shared by my Unit chair for Web Technologies and Development.
+      They presentation of this pictures utilizes a bootstrap <span style="color: rgb(167, 12, 12)">row</span>
+      consisting of three columns. It has class
+      <span style="color: rgb(167, 12, 12)">img-thumbnail</span> applied to it and this allows it to resize to the
+      column whenever the page is adjusted
+    </p>
+    <div class="row">
+      <div class="col-sm-4 col-12">
+        <img src="../static/images/ricardo-gomez.jpg" alt="Trees" class="img-fluid img-thumbnail">
+      </div>
+      <div class="col-sm-4 col-12">
+        <img src="../static/images/niko-photos.jpg" alt="Trees" class="img-fluid img-thumbnail">
+      </div>
+      <div class="col-sm-4 col-12">
+        <img src="../static/images/eberhard-grossgasteiger.jpg" alt="Trees" class="img-fluid img-thumbnail">
+      </div>
+    </div>
+    <p class="text-end"><a href="#intro">Top</a></p>
+    <!--End of section with Thumbnail images-->
+
+    <!--Beginning of section with Text and Images-->
+    <h2 id="middle">Tree Pictures with Text</h2>
+    <p>The last section was amazing, wasn't it? We were able to show thumbnail images in one row, ensuring that it
+      responsive. So no matter the device you are using, you can definitely have a good view of this web page.
+      Now we would put texts along with the images, the text will span through <span
+        style="color: rgb(167, 12, 12)">col-sm-8 </span>
+      and the images, <span style="color: rgb(167, 12, 12)">col-sm-4</span>.
+    </p>
+    <div class="row">
+      <div class=" p-4 mb-4 bg-light rounded col-sm-4 col-12">
+        <img src="../static/images/cristina-gottardi.jpg" alt="Trees" class="img-fluid rounded">
+      </div>
+      <div class="col-sm-8 col-12">
+        <p class="lead"> <br> This is a picture of a tree by Cristina Gottardi
+        <p class="small">The way the tree bends to the move of the wind is so relaxing to watch.
+          This image by Cristina Gottardi is a masterpiece and is used to show how images and text are used
+          in a bootstrap webpage. To make the paragraph stand out, the <span style="color: rgb(167, 12, 12)">class =
+            lead</span>
+          was used and to reduce the content of the paragraph, <span style="color: rgb(167, 12, 12)">class =
+            small</span> was used.
+        </p>
+        </p>
+      </div>
+    </div>
+    <p>This is the final row, with the previous content reversed to put the text before the image.</p>
+    <div class="row">
+      <div class="col-sm-8 col-12">
+        <p class="lead"> <br> This is a picture of a tree by <strong>Brandon Green</strong>
+        <p class="small">This is another lovely tree image that has the class
+          <span style="color: rgb(167, 12, 12)">img-fluid rounded-pill</span> applied to it.
+        </p>
+        </p>
+      </div>
+      <div class=" p-4 mb-4 bg-light rounded col-sm-4 col-12">
+        <img src="../static/images/brandon-green.jpg" alt="Trees" class="img-fluid rounded-pill">
+        <br>
+        <p class="text-end"><a href="#intro">Top</a></p>
+      </div>
+
+    </div>
+
+    <!--End of section with Text and Images-->
+
+    <!--Beginning of section with Tall Tree Data-->
+    <h2 id="bottom">Tall Tree Data</h2>
+    <p>All 12 of the world's largest trees are Giant sequoias. Grogan's Fault, the largest living
+      Coast redwood, would rank as the 13th largest living tree. Tāne Mahuta, the largest living
+      tree outside of California, would rank within the top 100 largest living trees. This
+      data was gotten from <a target="_blank"
+        href="https://en.wikipedia.org/wiki/List_of_superlative_trees#Tallest">Wikipedias List of Superlative Trees</a>.
+    </p>
+    <br>
+    <table class="table table-bordered table-hover table-light">
+      <thead>
+        <tr>
+          <th rowspan="2">Rank</th>
+          <th rowspan="2">Species</th>
+          <th rowspan="2">Common Name</th>
+          <th colspan="2">Height</th>
+          <th rowspan="2">Location</th>
+        </tr>
+        <tr>
+          <th scope="col">Meter</th>
+          <th scope="col">Height</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sequoia sempervirens</td>
+          <td>Coast redwood</td>
+          <td>115.92</td>
+          <td>380.3</td>
+          <td>California, USA</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Eucalyptus regnans</td>
+          <td>Mountain ash</td>
+          <td>100.5</td>
+          <td>329.7</td>
+          <td>Tasmania, Australia</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Pseudotsuga menziesii</td>
+          <td>Coast Douglas-fir</td>
+          <td>99.7</td>
+          <td>327</td>
+          <td>Oregon, USA</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Shorea faguetiana</td>
+          <td>Yellow meranti</td>
+          <td>98.53</td>
+          <td>323.3</td>
+          <td>Island of Borneo</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Picea sitchensis</td>
+          <td>Sitka spruce</td>
+          <td>96.7</td>
+          <td>317</td>
+          <td>California, USA</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Eucalyptus globulus</td>
+          <td>Southern blue gum</td>
+          <td>90.7</td>
+          <td>298</td>
+          <td>Tasmania, Australia</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Eucalyptus viminalis</td>
+          <td>Manna gum</td>
+          <td>88.9</td>
+          <td>292</td>
+          <td>Tasmania, Australia</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Araucariaceae</td>
+          <td>Araucaria hunsteinii</td>
+          <td>89.0</td>
+          <td>292</td>
+          <td>Eastern New Guniea</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Eucalyptus obliqua</td>
+          <td>Messmate or Stringbark</td>
+          <td>88.5</td>
+          <td>290</td>
+          <td>Tasmania, Australia</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Cupressus cashmeriana</td>
+          <td>Bhutan Cypress</td>
+          <td>94.6</td>
+          <td>310</td>
+          <td>Central South-Asia</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="text-end"><a href="#intro">Top</a></p>
+    <p>I believe that other trees will be found out as researchers continue their quest in this ever changing world. We
+      will
+      try as much as possible to keep this page updated as new tall trees are discovered.
+      <br>
+      <br>
+      The next section is for footer.
+    </p>
+  </div>
+  <!--End of section with Tall Tree Data-->
+
+  <!--Beginning of footer section-->
+  <footer class="bg-dark text-center text-white p-2">
+    <p>Copyright &copy; Kachis Blog 2022.</p>
+  </footer>
+  <!--End of footer section-->
+
+
+
+
+  <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
