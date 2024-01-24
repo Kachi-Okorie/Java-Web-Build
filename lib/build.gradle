@@ -9,6 +9,9 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
+    id 'java'
+	id 'war'
+	id 'org.sonarqube' version '3.3'
 }
 
 repositories {
@@ -49,4 +52,11 @@ java {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+sonarqube {
+    properties {
+       	property 'sonar.host.url', 'http://34.133.168.8:9000/'
+        property 'sonar.login', '755a69c95d100112c7128a99b5850f51b10ed01d'
+    }
 }
