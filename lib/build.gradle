@@ -8,8 +8,9 @@
 
 plugins {
     // Apply the java-library plugin for API and implementation separation.
+    id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java-library'
-    id 'java'
 	id 'war'
 	id 'org.sonarqube' version '3.3'
 }
